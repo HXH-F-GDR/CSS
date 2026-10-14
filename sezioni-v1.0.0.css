@@ -1,0 +1,220 @@
+/*Sezioni Off-GDR*/
+#c65073496 .mback {margin-bottom: -2px} #c65073496 {background:var(--sette)} #c65073496 .mtitle {font-family:var(--sottotit); font-size: 16px}
+#c65073496 .big_list {display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, auto); grid-column-gap: 0; grid-row-gap: 0}
+#f65073496 {grid-area: 1 / 1 / 2 / 4; align-self: start} #f65073497 {grid-area: 2 / 1 / 4 / 2} #f65112406 {grid-area: 2 / 2 / 3 / 4} #f65073499 {grid-area: 3 / 2 / 4 / 3; align-self: end} #f65073570 {grid-area: 3 / 3 / 4 / 4; align-self: end}
+#f65073496 .bb, #f65073497 .bb, #f65112406 .bb, #f65073499 .bb, #f65073570 .bb {width: 100% !important; box-sizing:border-box !important}
+#f65073496 .yy, #f65073497 .yy, #f65112406 .yy, #f65073499 .yy, #f65073570 .yy {display: none !important}
+#f65073496 .aa, #f65073497 .aa, #f65112406 .aa, #f65073499 .aa, #f65073570 .aa {display: none !important}
+#c65073496 .web a {font-family: var(--sottotit); font-size: 20px}
+#c65073496 .when, #c65073496 .where, #c65073496 .who {flex: 0 1 auto!important; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0; line-height: 1; font-size: 12px}
+#c65073496 .big_list li {display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden; margin: 2px}
+#c65073496 .zz {display: flex !important; flex-direction: row !important; width:calc(100% - 8px); min-width: 0; gap: 3px; box-sizing: border-box; overflow: hidden; align-items: center; margin: 4px; background: var(--due); border-radius: 10px; margin-top:auto}
+#c65073496 .when, #c65073496 .mods, #c65073496 .subs, #c65073496 .where span {display:none}
+#c65073496 .where {padding-left: 10px}
+#c65073496 .zz a {color: var(--otto)}
+/*Benvenuti*/
+#f65073496 .when, #f65112406 .when {order: 3}
+#f65073496 .when, #f65112406 .when {display:flex; color:var(--otto); font-weight:bold} #f65073496 .when::before, #f65112406 .when::before {content:'del'; margin-right: 3px; color:var(--uno); font-weight:normal}
+#f65073496 .ben-icon {float:left; font-size: 35px; margin-top: 8px}
+#f65073496 .web a {font-family: var(--sez); font-size: 40px; letter-spacing: 4px; float:left}
+#f65073496 .desc {height: 35px; overflow: auto; padding-right: 3px; margin-top: 10px}
+/*regolamento*/
+#f65073497 .bb .web a {display:block; font-family: var(--sez); font-size: 30px; letter-spacing: 8px; text-align:center!important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+#f65073497 .reg-icon {float:left; font-size: 35px; margin-top: 3px}
+.reg-desc {height: 80px; overflow: auto; padding-right: 3px}
+.reg-desc i {font-size: 56px; float:left; padding-right: 3px; color:var(--sei)}
+.reg-button {display:flex; gap: 3px; align-items: center}
+.reg-button a {flex: 1; color:var(--otto)}
+.r-forum, .r-gdr {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 35px; padding:auto; background:var(--sette)}
+.r-forum:hover, .r-gdr:hover {background: var(--sei)}
+/*Schede*/
+#f65112406 {min-height: 117px}
+#f65112406 .web a {display:block; font-family: var(--sez); font-size: 35px; letter-spacing: .8vw; float:left; margin-top: 1px}
+#f65112406 .sc-icon {float:left; font-size: 35px; margin-top: 5px}
+#f65112406 .sch-desc {height: 45px; overflow: auto; padding-right: 3px; margin-top: 5px}
+.sch-button {display:flex; gap: 3px; align-items: center}
+.sch-button a {flex: 1; color:var(--otto)}
+.s-app, .s-con, .s-ina, .s-npc {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 30px; padding:auto; background:var(--sette)}
+.s-app:hover, .s-con:hover, .s-ina:hover, .s-npc:hover {background: var(--sei)}
+
+/*Bacheca & Supporto*/
+#f65073499, #f65073570 {height: 70px}
+#f65073499 .web a, #f65073570 .web a {display:block; font-family: var(--sez); font-size: 25px; letter-spacing: .8vw; text-align:center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+#f65073499 .b-icon {float:left; font-size: 35px}
+#f65073570 .s-icon {float:right; font-size: 35px; letter-spacing: 1px}
+/*Sezioni On-Game*/
+/*Continenti del v6*/
+#c65073567 .mback {margin-bottom: -4px} #c65073567 {background:var(--sette)} #c65073567 .mtitle {font-family:var(--sottotit); font-size: 16px}
+#c65073567 .big_list {display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, auto); grid-column-gap: 0; grid-row-gap: 0}
+#f65073567 {grid-area: 1 / 1 / 2 / 2}
+#f65073568 {grid-area: 1 / 2 / 2 / 3}
+#f65073569 {grid-area: 1 / 3 / 2 / 4}
+#f65114231 {grid-area: 2 / 1 / 3 / 2}
+#f65114232 {grid-area: 2 / 2 / 3 / 3}
+#f65114233 {grid-area: 2 / 3 / 3 / 4}
+#f65073567 .bb, #f65073568 .bb, #f65073569 .bb, #f65114231 .bb, #f65114232 .bb, #f65114233 .bb {width: 100% !important; box-sizing:border-box !important}
+#f65073567 .yy, #f65073568 .yy, #f65073569 .yy, #f65114231 .yy, #f65114232 .yy, #f65114233 .yy {display: none !important}
+#f65073567 .aa, #f65073568 .aa, #f65073569 .aa, #f65114231 .aa, #f65114232 .aa, #f65114233 .aa {display: none !important}
+#c65073567 .web a {margin-top: 25px; display: block; font-family: var(--sottotit); font-size: 3.5vw; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); text-align:center; opacity:.3; color:var(--bianco); vertical-align:middle; height: 80px; background:var(--nero)}
+
+#c65073567 .big_list >:hover .web a {display: block; text-align: center; font-size: 20px; padding: 2px 0; background: var(--sette); border-radius: 0 0 10px 10px; height: 25px; width: 100%; margin-top: -10px; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); opacity: 1; color: var(--sei)}
+#c65073567 .when, #c65073567 .where, #c65073567 .who {flex: 0 1 auto!important; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0; line-height: 1; font-size: 12px}
+#c65073567 .big_list li {display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden; margin: 2px}
+#c65073567 .zz {display: flex !important; flex-direction: row !important; width:calc(100% - 8px); min-width: 0; gap: 3px; box-sizing: border-box; overflow: hidden; align-items: center; margin: 4px; background: var(--due); border-radius: 10px; margin-top:auto; opacity: 0; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000)}
+#c65073567 .big_list >:hover .zz {opacity: 1; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000)}
+#c65073567 .when, #c65073567 .mods, #c65073567 .subs, #c65073567 .where span {display:none}
+#c65073567 .where {padding-left: 10px}
+#c65073567 .zz a {color: var(--otto)}
+/*Narevka*/
+#f65073567 {position: relative; height: 165px; z-index: 9; border: 10px solid var(--cinque)}
+#f65073567::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;  background-repeat: no-repeat; background-size: cover}
+.nar-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65073567 .big_list >:hover .nar-button {opacity: 1}
+.nar-button a {flex: 1 1 45%; color:var(--otto)}
+.nar-1, .nar-2, .nar-3, .nar-4 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.nar-1:hover, .nar-2:hover, .nar-3:hover, .nar-4:hover {background: var(--sei)}
+/*Solmara*/
+#f65073568 {position: relative; height: 165px; z-index: 9; border: 10px solid var(--cinque)}
+#f65073568::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;  background-repeat: no-repeat; background-size: cover}
+.sol-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65073567 .big_list >:hover .sol-button {opacity: 1}
+.sol-button a {flex: 1 1 45%; color:var(--otto)}
+.sol-1, .sol-2, .sol-3 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.sol-1:hover, .sol-2:hover, .sol-3:hover {background: var(--sei)}
+/*Yorbian*/
+#f65073569 {position: relative; height: 165px; z-index: 9; border: 10px solid var(--cinque)}
+#f65073569::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;  background-repeat: no-repeat; background-size: cover}
+.yor-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65073567 .big_list >:hover .yor-button {opacity: 1}
+.yor-button a {flex: 1 1 45%; color:var(--otto)}
+.yor-1, .yor-2, .yor-3, .yor-4 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.yor-1:hover, .yor-2:hover, .yor-3:hover, .yor-4:hover {background: var(--sei)}
+/*Azia*/
+#f65114231 {position: relative; height: 165px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114231::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8; background-repeat: no-repeat; background-size: cover}
+.azi-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65073567 .big_list >:hover .azi-button {opacity: 1}
+.azi-button a {flex: 1 1 45%; color:var(--otto)}
+.azi-1, .azi-2, .azi-3 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.azi-1:hover, .azi-2:hover, .azi-3:hover {background: var(--sei)}
+/*Keth'ra*/
+#f65114232 {position: relative; height: 165px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114232::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;  background-repeat: no-repeat; background-size: cover}
+.ket-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65073567 .big_list >:hover .ket-button {opacity: 1}
+.ket-button a {flex: 1 1 90%; color:var(--otto)}
+.ket-1, .ket-2 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.ket-1:hover, .ket-2:hover {background: var(--sei)}
+/*Vandros*/
+#f65114233 {position: relative; height: 165px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114233::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;  background-repeat: no-repeat; background-size: cover}
+.van-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65073567 .big_list >:hover .van-button {opacity: 1}
+.van-button a {flex: 1 1 90%; color:var(--otto)}
+.van-1, .van-2 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.van-1:hover, .van-2:hover {background: var(--sei)}
+/*Resto del mondo*/
+#c65114234 .mback {display:none} #c65114234 {background:var(--sette); margin-top: -10px} #c65114234 .mtitle {font-family:var(--sottotit); font-size: 16px}
+#c65114234 .big_list {display: grid; grid-template-columns: repeat(6, 1fr); grid-template-rows: repeat(4, auto); grid-column-gap: 0; grid-row-gap: 0}
+#f65114234 {grid-area: 1 / 1 / 2 / 4}
+#f65114235 {grid-area: 1 / 4 / 2 / 7}
+#f65114236 {grid-area: 2 / 1 / 4 / 3}
+#f65114238 {grid-area: 3 / 3 / 4 / 7}
+#f65114237 {grid-area: 2 / 3 / 3 / 7}
+#f65118748 {grid-area: 4 / 1 / 5 / 4}
+#f65118788 {grid-area: 4 / 4 / 5 / 7}
+#f65114234 .bb, #f65114235 .bb, #f65114236 .bb, #f65114237 .bb, #f65114238 .bb, #f65118748 .bb, #f65118788 .bb {width: 100% !important; box-sizing:border-box !important}
+#f65114234 .yy, #f65114235 .yy, #f65114236 .yy, #f65114237 .yy, #f65114238 .yy, #f65118748 .yy, #f65118788 .yy {display: none !important}
+#f65114234 .aa, #f65114235 .aa, #f65114236 .aa, #f65114237 .aa, #f65114238 .aa, #f65118748 .aa, #f65118788 .aa {display: none !important}
+#c65114234 .web a {font-family: var(--sottotit); font-size: 20px}
+#c65114234 .big_list >:hover .web a {display: block; text-align: center; font-size: 20px!important; padding: 2px 0; background: var(--sette); border-radius: 0 0 10px 10px; height: 25px; width: 100%; margin-top: -10px; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); opacity: 1; color: var(--sei)}
+#c65114234 .when, #c65114234 .where, #c65114234 .who {flex: 0 1 auto!important; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0; line-height: 1; font-size: 12px}
+#c65114234 .big_list li {display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden; margin: 2px}
+#c65114234 .zz {display: flex !important; flex-direction: row !important; width:calc(100% - 8px); min-width: 0; gap: 3px; box-sizing: border-box; overflow: hidden; align-items: center; margin: 4px; background: var(--due); border-radius: 10px; margin-top:auto; opacity: 0; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000)}
+#c65114234 .big_list >:hover .zz {opacity: 1; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000)}
+#c65114234 .when, #c65114234 .mods, #c65114234 .subs, #c65114234 .where span {display:none}
+#c65114234 .where {padding-left: 10px}
+#c65114234 .zz a {color: var(--otto)}
+#f65114234 .web a, #f65114235 .web a {margin-top: 10px; display: block; font-family: var(--sottotit); font-size: 2.08vw; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); text-align:center; opacity:.3; color:var(--bianco); vertical-align:middle; height: 50px; background:var(--nero)}
+/*Stelle Cadenti*/
+#f65114234 .when, #f65114235 .when, #f65114237 .when {order: 3}
+#f65114234 .when, #f65114235 .when, #f65114237 .when {display:flex; color:var(--otto); font-weight:bold} #f65114234 .when::before, #f65114235 .when::before, #f65114237 .when::before {content:'del'; margin-right: 3px; color:var(--uno); font-weight:normal}
+#f65114234 {position: relative; height: 100px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114234::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;background-repeat: no-repeat; background-size: cover}
+/*Greed Island*/
+#f65114235 {position: relative; height: 100px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114235::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;  background-repeat: no-repeat; background-size: cover}
+/*Torre Celeste*/
+#f65114236 .web a {margin-top: 60px; display: block; font-family: var(--sottotit); font-size: 2.08vw; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); text-align:center; opacity:.3; color:var(--bianco); vertical-align:middle; height: 50px; background:var(--nero)}
+#f65114236 {position: relative; height: 204px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114236::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8;  background-repeat: no-repeat; background-size: cover}
+.tor-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65114234 .big_list >:hover .tor-button {opacity: 1}
+.tor-button a {flex: 1 1 90%; color:var(--otto)}
+.tor-1, .tor-2, .tor-3 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 35px; padding:auto; background:var(--sette)}
+.tor-1:hover, .tor-2:hover, .tor-3:hover {background: var(--sei)}
+/*Sito degli Hunter*/
+#f65114237 .web a, #f65114238 .web a {margin-top: 10px; display: block; font-family: var(--sottotit); font-size: 2.08vw; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); text-align:center; opacity:.3; color:var(--bianco); vertical-align:middle; height: 50px; background:var(--nero)}
+#f65114237 {position: relative; height: 100px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114237::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8; background-repeat: no-repeat; background-size: cover}
+/*Hunternet*/
+#f65114238 {padding: 0; position: relative; height: 100px; z-index: 9; border: 10px solid var(--cinque)}
+#f65114238::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8; background-repeat: no-repeat; background-size: cover}
+#f65114238 .zz {display:none!important}
+/*Mercante & Oltre la Storia*/
+#f65118748 .web a, #f65118788 .web a {margin-top: 20px; display: block; font-family: var(--sottotit); font-size: 2.08vw!important; transition: all 1400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); text-align:center; opacity:.3; color:var(--bianco); vertical-align:middle; height: 50px; background:var(--nero)}
+#f65118748, #f65118788 {padding: 0; position: relative; height: 120px; z-index: 9; border: 10px solid var(--cinque)}
+#f65118748::before {z-index: -2; content: ""; position: absolute; width: 100%; height: 100%; opacity: .8; background-repeat: no-repeat; background-size: cover}
+#f65118748 .zz, #f65118788 .zz {display:none!important}
+/*Mercante*/
+.merc-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65114234 .big_list >:hover .merc-button {opacity: 1}
+.merc-button a {flex: 1 1 20%; color:var(--otto)}
+.merc-1, .merc-2, .merc-3 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.merc-1:hover, .merc-2:hover, .merc-3:hover {background: var(--sei)}
+/*Oltre la Storia*/
+.au-button {display:flex; gap: 3px; align-items: center; flex-wrap: wrap; opacity: 0; font-size: 11px}
+#c65114234 .big_list >:hover .au-button {opacity: 1}
+.au-button a {flex: 1 1 45%; color:var(--otto)}
+.au-1, .au-2 {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 40px; padding:auto; background:var(--sette)}
+.au-1:hover, .au-2:hover {background: var(--sei)}
+
+/*Sezioni GDR Extra*/
+#c65073571 .mback {margin-bottom: -4px} #c65073571 {background:var(--sette)} #c65073571 .mtitle {font-family:var(--sottotit); font-size: 16px}
+#c65073571 .big_list {display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, auto); grid-column-gap: 0; grid-row-gap: 0}
+#f65073571 {grid-area: 1 / 1 / 2 / 2; align-self: start} #f65073572 {grid-area: 1 / 2 / 2 / 3} #f65111597 {grid-area: 2 / 1 / 3 / 3}
+#f65073571 .bb, #f65073572 .bb, #f65111597 .bb {width: 100% !important; box-sizing:border-box !important}
+#f65073571 .yy, #f65073572 .yy, #f65111597 .yy {display: none !important}
+#f65073571 .aa, #f65073572 .aa, #f65111597 .aa {display: none !important}
+#c65073571 .web a {font-family: var(--sottotit); font-size: 20px}
+#c65073571 .when, #c65073571 .where, #c65073571 .who {flex: 0 1 auto!important; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0; line-height: 1; font-size: 12px}
+#c65073571 .big_list li {display: flex; flex-direction: column; box-sizing: border-box; overflow: hidden; margin: 2px}
+#c65073571 .zz {display: flex !important; flex-direction: row !important; width:calc(100% - 8px); min-width: 0; gap: 3px; box-sizing: border-box; overflow: hidden; align-items: center; margin: 4px; background: var(--due); border-radius: 10px; margin-top:auto}
+#c65073571 .when, #c65073571 .mods, #c65073571 .subs, #c65073571 .where span {display:none}
+#c65073571 .where {padding-left: 10px}
+#c65073571 .zz a {color: var(--otto)}
+/*Off-topic & Capitoli*/
+#f65073571 .when, #f65073572 .when, #f65111597 .when {order: 3}
+#f65073571 .when, #f65073572 .when, #f65111597 .when {display:flex; color:var(--otto); font-weight:bold} #f65073571 .when::before, #f65073572 .when::before, #f65111597 .when::before {content:'del'; margin-right: 3px; color:var(--uno); font-weight:normal}
+#f65073571, #f65073572 {height: 100px}
+#f65073571 .web a, #f65073572 .web a {display:block; font-family: var(--sez); font-size: 25px; letter-spacing: .3vw; text-align:center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+#f65073571 .ot-icon {float:left; font-size: 35px}
+#f65073572 .cap-icon {float:right; font-size: 35px; letter-spacing: 1px}
+/*off-topic*/
+.ot-button {display:flex; gap: 3px; align-items: center}
+.ot-button a {flex: 1; color:var(--otto)}
+.ot-nen, .ot-hunter {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 30px; padding:auto; background:var(--sette)}
+.ot-nen:hover, .ot-hunter:hover {background: var(--sei)}
+/*capitoli*/
+.cap-button {display:flex; gap: 3px; align-items: center}
+.cap-button a {flex: 1; color:var(--otto)}
+.cap-pre, .cap-trad {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 30px; padding:auto; background:var(--sette)}
+.cap-pre:hover, .cap-trad:hover {background: var(--sei)}
+/*spam*/
+#f65111597 .web a {display:block; font-family: var(--sez); font-size: 25px; letter-spacing: .8vw; text-align:left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+#f65111597 .spm-icon {float:left; font-size: 35px}
+.spm-extra {letter-spacing: .4vw; font-size: 18px}
+.spm-button {display:flex; gap: 3px; align-items: center}
+.spm-button a {flex: 1; color:var(--otto)}
+.spm-reg, .spm-ric, .spm-aff, .spm-gem {display: flex; align-items: center; justify-content: center; border-radius: 10px; width: 100%; text-align: center; margin-top: 5px; height: 30px; padding:auto; background:var(--sette)}
+.spm-reg:hover, .spm-ric:hover, .spm-aff:hover, .spm-gem:hover {background: var(--sei)}
