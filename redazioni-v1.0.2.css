@@ -1,80 +1,20 @@
-/* Redazioni in versione mobile. Le classi gm-on, gm-sp (La Spina), gm-yt (York Shin Times), gm-sw (Swardani Post) sul body le aggiunge giornali-mobile.js */
+/* Redazioni in versione mobile. Nella lista la testata è quella della sezione (con il suo CSS), qui c'è solo la testata minima della pagina dell'articolo. Le classi gm-on, gm-sp (La Spina), gm-yt (York Shin Times), gm-sw (Swardani Post) sul body le aggiunge giornali-mobile.js */
 
 /* Colori e font delle tre testate */
 body.gm-sp {--g-bg: #F6F3EE; --g-card: #FFFFFF; --g-ink: #141414; --g-soft: #6B655E; --g-rule: #DDD6CC; --g-acc: #C8102E; --g-acc-soft: #F6DADF; --g-title: 'Playfair Display', serif; --g-text: 'Libre Franklin', sans-serif; --g-meta: 'IBM Plex Mono', monospace; --g-read: 'Libre Franklin', sans-serif}
 body.gm-sw {--g-bg: #EEF1F5; --g-card: #FFFFFF; --g-ink: #18202E; --g-soft: #687286; --g-rule: #DFE3EA; --g-acc: #B8954A; --g-acc-soft: #ECDFC3; --g-navy: #0F1F3A; --g-navy-2: #1D3563; --g-title: 'Libre Caslon Text', serif; --g-text: 'Source Sans 3', sans-serif; --g-meta: 'Source Sans 3', sans-serif; --g-read: 'Libre Caslon Text', serif}
 body.gm-yt {--g-bg: #FFFFFF; --g-card: #FFFFFF; --g-ink: #15191C; --g-soft: #5F676D; --g-rule: #E2E6E8; --g-acc: #0E5A63; --g-acc-soft: #E3EFF0; --g-title: 'Newsreader', serif; --g-text: 'Newsreader', serif; --g-meta: 'Libre Franklin', sans-serif; --g-read: 'Newsreader', serif}
 
-/* Testata, parti comuni */
-#gm-head {background: var(--g-card)!important; color: var(--g-ink)!important; margin: 0!important; padding: 0!important; text-align: left!important; font-family: var(--g-text)!important; border-bottom: 1px solid var(--g-rule)!important}
-#gm-head * {box-sizing: border-box!important}
-#gm-head .gm-nav {display: flex!important; flex-wrap: nowrap!important; overflow-x: auto!important; gap: 2px!important; padding: 0 8px!important; scrollbar-width: none!important}
-#gm-head .gm-nav::-webkit-scrollbar {display: none!important}
-#gm-head .gm-nav button, #gm-head .gm-nav a {flex-shrink: 0!important; background: none!important; border: none!important; border-radius: 0!important; box-shadow: none!important; cursor: pointer!important; text-decoration: none!important; white-space: nowrap!important; padding: 10px!important; margin: 0!important}
-
-/* Testata La Spina */
-body.gm-sp #gm-head {background: var(--g-bg)!important}
-#gm-head .sp-bar {display: flex!important; align-items: center!important; gap: 8px!important; background: var(--g-ink)!important; color: #D8D8D8!important; padding: 6px 10px!important; font-family: var(--g-meta)!important; font-size: 10px!important}
-#gm-head .sp-dots {display: flex!important; gap: 4px!important}
-#gm-head .sp-dots i {display: block!important; width: 8px!important; height: 8px!important; border-radius: 50%!important; background: #3A3A3A!important}
-#gm-head .sp-dots i:first-child {background: var(--g-acc)!important}
-#gm-head .sp-url {flex: 1!important; min-width: 0!important; background: #262626!important; border-radius: 4px!important; padding: 2px 8px!important; white-space: nowrap!important; overflow: hidden!important; text-overflow: ellipsis!important}
-#gm-head .sp-url b {color: #FFFFFF!important; font-weight: 600!important}
-#gm-head .sp-mast {display: flex!important; align-items: center!important; gap: 12px!important; padding: 16px 12px 12px!important}
-#gm-head .sp-logo {width: 46px!important; height: 46px!important; flex-shrink: 0!important}
-#gm-head .sp-logo svg {width: 100%!important; height: 100%!important; display: block!important}
-#gm-head .sp-title {flex: 1!important; min-width: 0!important}
-#gm-head .sp-name {font-family: var(--g-title)!important; font-weight: 900!important; font-size: 38px!important; line-height: 0.95!important; letter-spacing: -0.02em!important; color: var(--g-ink)!important}
-#gm-head .sp-name em {color: var(--g-acc)!important; font-style: italic!important}
-#gm-head .sp-motto {font-family: var(--g-meta)!important; font-size: 9.5px!important; line-height: 1.4!important; text-transform: uppercase!important; letter-spacing: 0.05em!important; color: var(--g-soft)!important; margin-top: 5px!important}
-#gm-head .sp-term {display: flex!important; align-items: center!important; gap: 10px!important; margin: 0 12px 12px!important; border: 2px solid var(--g-ink)!important; padding: 8px 10px!important; background: var(--g-card)!important}
-#gm-head .sp-term-lbl {width: 72px!important; flex-shrink: 0!important; font-family: var(--g-meta)!important; font-size: 9px!important; line-height: 1.3!important; text-transform: uppercase!important; letter-spacing: 0.06em!important; color: var(--g-soft)!important}
-#gm-head .sp-term-val {flex-shrink: 0!important; font-family: var(--g-title)!important; font-weight: 900!important; font-size: 28px!important; line-height: 1!important; color: var(--g-acc)!important}
-#gm-head .sp-term-val small {font-size: 12px!important; color: var(--g-soft)!important; font-weight: 700!important}
-#gm-head .sp-term-side {flex: 1!important; min-width: 0!important}
-#gm-head .sp-term-bar {height: 6px!important; background: var(--g-rule)!important; overflow: hidden!important}
-#gm-head .sp-term-bar span {display: block!important; height: 100%!important; background: var(--g-acc)!important}
-#gm-head .sp-term-note {font-family: 'Special Elite', monospace!important; font-size: 11px!important; color: var(--g-ink)!important; margin-top: 4px!important}
-body.gm-sp #gm-head .gm-nav {border-top: 3px double var(--g-ink)!important; border-bottom: 1px solid var(--g-rule)!important; padding: 6px 8px!important}
-body.gm-sp #gm-head .gm-nav button, body.gm-sp #gm-head .gm-nav a {font-family: var(--g-meta)!important; font-size: 11px!important; text-transform: uppercase!important; letter-spacing: 0.06em!important; color: var(--g-ink)!important; padding: 5px 9px!important}
-body.gm-sp #gm-head .gm-nav button.gm-on {background: var(--g-ink)!important; color: var(--g-bg)!important}
-#gm-head .sp-ticker {display: flex!important; align-items: flex-start!important; gap: 8px!important; padding: 8px 12px!important; font-size: 13px!important; line-height: 1.35!important; color: var(--g-ink)!important}
-#gm-head .sp-ticker b {flex-shrink: 0!important; background: var(--g-acc)!important; color: #FFFFFF!important; font-family: var(--g-meta)!important; font-size: 9.5px!important; letter-spacing: 0.08em!important; padding: 3px 6px!important}
-
-/* Testata Swardani Post */
-#gm-head .sw-util {display: flex!important; justify-content: space-between!important; align-items: center!important; gap: 10px!important; background: var(--g-navy)!important; color: var(--g-acc-soft)!important; padding: 6px 12px!important; font-size: 10px!important; letter-spacing: 0.06em!important}
-#gm-head .sw-sub {background: var(--g-acc)!important; color: var(--g-navy)!important; font-weight: 700!important; padding: 2px 8px!important; border-radius: 2px!important; text-transform: uppercase!important; letter-spacing: 0.08em!important}
-#gm-head .sw-bar {display: flex!important; align-items: center!important; gap: 10px!important; padding: 14px 12px 10px!important; text-decoration: none!important}
-#gm-head .sw-seal {display: flex!important; align-items: center!important; justify-content: center!important; width: 48px!important; height: 48px!important; flex-shrink: 0!important; background: var(--g-navy)!important; border: 3px solid var(--g-acc)!important; border-radius: 50%!important}
-#gm-head .sw-seal i {font-size: 26px!important; line-height: 1!important; color: var(--g-acc)!important; display: block!important}
-#gm-head .sw-name {display: block!important; font-family: 'Cinzel', serif!important; font-weight: 800!important; font-size: 22px!important; line-height: 1.05!important; letter-spacing: 0.03em!important; color: var(--g-navy)!important}
-#gm-head .sw-motto {display: block!important; font-family: 'Libre Caslon Text', serif!important; font-style: italic!important; font-size: 12px!important; color: var(--g-soft)!important; margin-top: 3px!important}
-#gm-head .sw-edition {padding: 0 12px 10px!important; font-size: 11px!important; color: var(--g-soft)!important}
-#gm-head .sw-edition b {color: var(--g-ink)!important; font-weight: 700!important}
-body.gm-sw #gm-head .gm-nav {background: var(--g-navy-2)!important}
-body.gm-sw #gm-head .gm-nav button, body.gm-sw #gm-head .gm-nav a {font-family: var(--g-text)!important; font-size: 13px!important; font-weight: 600!important; color: #DFE6F3!important}
-body.gm-sw #gm-head .gm-nav button.gm-on {color: #FFFFFF!important; box-shadow: inset 0 -3px 0 var(--g-acc)!important}
-#gm-head .sw-brief {display: flex!important; align-items: flex-start!important; gap: 10px!important; padding: 9px 12px!important; font-size: 13.5px!important; line-height: 1.4!important; color: var(--g-ink)!important; background: #FBF8F1!important; border-bottom: 1px solid var(--g-rule)!important}
-#gm-head .sw-brief b {flex-shrink: 0!important; background: var(--g-acc)!important; color: #FFFFFF!important; font-size: 9.5px!important; font-weight: 700!important; letter-spacing: 0.12em!important; text-transform: uppercase!important; padding: 3px 7px!important; border-radius: 2px!important}
-#gm-head .sw-top5 {padding: 12px!important}
-#gm-head .sw-top5-lbl {font-size: 11px!important; font-weight: 700!important; letter-spacing: 0.12em!important; text-transform: uppercase!important; color: var(--g-navy)!important; border-bottom: 2px solid var(--g-acc)!important; padding-bottom: 4px!important; margin-bottom: 4px!important}
-#gm-head .sw-top5 a {display: flex!important; gap: 10px!important; align-items: baseline!important; padding: 7px 0!important; color: var(--g-ink)!important; font-size: 13px!important; line-height: 1.3!important; text-decoration: none!important; border-top: 1px solid var(--g-rule)!important}
-#gm-head .sw-top5 a:first-of-type {border-top: none!important}
-#gm-head .sw-top5 a i {flex-shrink: 0!important; width: 14px!important; font-style: normal!important; font-family: 'Libre Caslon Text', serif!important; font-weight: 700!important; font-size: 19px!important; line-height: 1!important; color: var(--g-acc)!important}
-
-/* Testata York Shin Times */
-#gm-head .yt-util {display: flex!important; justify-content: space-between!important; align-items: center!important; gap: 10px!important; padding: 7px 12px!important; font-family: var(--g-meta)!important; font-size: 10.5px!important; color: var(--g-soft)!important; border-bottom: 1px solid var(--g-rule)!important}
-#gm-head .yt-util b {color: var(--g-ink)!important; font-weight: 700!important}
-#gm-head .yt-sub {background: var(--g-acc)!important; color: #FFFFFF!important; border-radius: 3px!important; font-weight: 600!important; padding: 2px 8px!important; text-transform: uppercase!important; letter-spacing: 0.06em!important; font-size: 9.5px!important}
-#gm-head .yt-mast {display: flex!important; flex-direction: column!important; align-items: center!important; padding: 16px 12px 0!important; text-align: center!important}
-#gm-head .yt-name {display: inline-block!important; font-family: 'Manufacturing Consent', serif!important; font-weight: 400!important; font-size: 36px!important; line-height: 1!important; color: var(--g-ink)!important; text-decoration: none!important}
-#gm-head .yt-dateline {width: 100%!important; margin-top: 12px!important; padding: 6px 0!important; border-top: 1px solid var(--g-rule)!important; font-family: var(--g-meta)!important; font-size: 10px!important; line-height: 1.5!important; letter-spacing: 0.04em!important; text-transform: uppercase!important; color: var(--g-soft)!important}
-#gm-head .yt-dateline b {display: block!important; font-family: 'Newsreader', serif!important; font-style: italic!important; font-weight: 400!important; font-size: 13px!important; text-transform: none!important; letter-spacing: 0!important; color: var(--g-ink)!important}
-body.gm-yt #gm-head .gm-nav {border-top: 1px solid var(--g-rule)!important; border-bottom: 1px solid var(--g-rule)!important}
-body.gm-yt #gm-head .gm-nav button, body.gm-yt #gm-head .gm-nav a {font-family: var(--g-meta)!important; font-size: 12px!important; font-weight: 500!important; color: var(--g-ink)!important}
-body.gm-yt #gm-head .gm-nav button.gm-on {font-weight: 700!important; color: var(--g-acc)!important; box-shadow: inset 0 -3px 0 var(--g-acc)!important}
-#gm-head .yt-brief {display: flex!important; align-items: flex-start!important; gap: 8px!important; padding: 10px 12px!important; font-family: 'Newsreader', serif!important; font-size: 14.5px!important; line-height: 1.35!important; color: var(--g-ink)!important; background: var(--g-acc-soft)!important}
-#gm-head .yt-brief b {flex-shrink: 0!important; padding-top: 3px!important; font-family: var(--g-meta)!important; font-size: 9.5px!important; font-weight: 700!important; letter-spacing: 0.1em!important; text-transform: uppercase!important; color: var(--g-acc)!important}
+/* Testata minima della pagina dell'articolo */
+#gm-head.gm-mini {display: flex!important; align-items: center!important; justify-content: space-between!important; gap: 10px!important; box-sizing: border-box!important; margin: 0!important; padding: 12px!important; background: var(--g-card)!important; border-bottom: 1px solid var(--g-rule)!important; text-align: left!important}
+#gm-head .gm-mini-name {font-family: var(--g-title)!important; font-weight: 900!important; font-size: 24px!important; line-height: 1!important; color: var(--g-ink)!important; text-decoration: none!important; white-space: nowrap!important}
+#gm-head .gm-mini-name em {color: var(--g-acc)!important; font-style: italic!important}
+#gm-head .gm-mini-back {font-family: var(--g-meta)!important; font-size: 11px!important; text-transform: uppercase!important; letter-spacing: 0.06em!important; color: var(--g-acc)!important; text-decoration: none!important; white-space: nowrap!important}
+body.gm-sp #gm-head.gm-mini {background: var(--g-bg)!important; border-bottom: 3px double var(--g-ink)!important}
+body.gm-sw #gm-head.gm-mini {background: var(--g-navy)!important; border-bottom: 3px solid var(--g-acc)!important}
+body.gm-sw #gm-head .gm-mini-name {font-family: 'Cinzel', serif!important; font-weight: 800!important; font-size: 20px!important; letter-spacing: 0.03em!important; color: #FFFFFF!important}
+body.gm-sw #gm-head .gm-mini-back {color: var(--g-acc-soft)!important}
+body.gm-yt #gm-head .gm-mini-name {font-family: 'Manufacturing Consent', serif!important; font-weight: 400!important; font-size: 26px!important}
 
 /* Lista articoli, parti comuni */
 body.gm-on ul.gm-list {display: flex!important; flex-direction: column!important; gap: 12px!important; background: var(--g-bg)!important; padding: 12px!important; margin: 0!important; border: none!important; box-shadow: none!important; list-style: none!important}
@@ -132,7 +72,7 @@ body.gm-yt ul.gm-list > li.post {display: grid!important; grid-template-columns:
 body.gm-yt ul.gm-list > li.post > * {grid-column: 1!important}
 body.gm-yt ul.gm-list > li.post.gm-img {grid-template-columns: minmax(0, 1fr) 96px!important}
 body.gm-yt ul.gm-list > li.post.gm-img > .gm-cover {grid-column: 2!important; grid-row: 1 / span 4!important; width: 96px!important; height: 72px!important; border-radius: 4px!important; margin: 0!important}
-body.gm-yt ul.gm-list > li.post.gm-first {display: flex!important; border-bottom: 2px solid var(--g-ink)!important; padding: 18px 0 20px!important}
+body.gm-yt ul.gm-list > li.post.gm-first:not(.gm-hide) {display: flex!important; border-bottom: 2px solid var(--g-ink)!important; padding: 18px 0 20px!important}
 body.gm-yt ul.gm-list > li.post.gm-first > .gm-cover {width: 100%!important; height: 200px!important; border-radius: 4px!important; margin: 0 0 12px!important}
 body.gm-yt .gm-tag {font-family: var(--g-meta)!important; font-size: 10px!important; font-weight: 700!important; text-transform: uppercase!important; letter-spacing: 0.08em!important; color: var(--g-acc)!important; background: var(--g-acc-soft)!important; padding: 3px 7px!important; border-radius: 3px!important}
 body.gm-yt ul.gm-list h3.web {font-weight: 600!important; font-size: 17px!important; line-height: 1.25!important}
@@ -182,3 +122,4 @@ li.top {display:none}
 li.bottom {display:none}
 li#inter-topics-tips-box {display:none}
 .option {display:none}
+.list-group > * {outline:none}
