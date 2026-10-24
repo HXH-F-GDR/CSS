@@ -121,5 +121,6 @@ body.gm-yt ul.gm-art > li.post.gm-main table.color td::after {content: 'Articolo
 li.top {display:none}
 li.bottom {display:none}
 li#inter-topics-tips-box {display:none}
-.option {display:none}
+.option {display:none!important}
 .list-group > * {outline:none!important}
+a#comments {display: none !important;}
