@@ -122,4 +122,4 @@ li.top {display:none}
 li.bottom {display:none}
 li#inter-topics-tips-box {display:none}
 .option {display:none}
-.list-group > * {outline:none}
+.list-group > * {outline:none!important}
