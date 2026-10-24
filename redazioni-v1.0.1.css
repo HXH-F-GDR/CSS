@@ -177,3 +177,8 @@ body.gm-yt .gm-title {font-weight: 600!important; text-align: center!important}
 body.gm-yt .gm-art-head .gm-by {justify-content: center!important}
 body.gm-yt ul.gm-art > li.post.gm-main table.color td {font-size: 17px!important; line-height: 1.8!important; color: #1F1F1F!important}
 body.gm-yt ul.gm-art > li.post.gm-main table.color td::after {content: 'Articolo verificato dalla redazione · © York Shin Times'!important; display: block!important; font-family: var(--g-meta)!important; font-size: 11px!important; letter-spacing: 0.04em!important; color: var(--g-soft)!important; border-top: 2px solid var(--g-acc)!important; padding-top: 12px!important; margin-top: 28px!important}
+
+li.top {display:none}
+li.bottom {display:none}
+li#inter-topics-tips-box {display:none}
+.option {display:none}
