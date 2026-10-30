@@ -1,5 +1,5 @@
 /* Redazioni in versione mobile. Nella lista la testata è quella della sezione (con il suo CSS), qui c'è solo la testata minima della pagina dell'articolo. Le classi gm-on, gm-sp (La Spina), gm-yt (York Shin Times), gm-sw (Swardani Post) sul body le aggiunge giornali-mobile.js */
-
+.edit{display:none}
 /* Colori e font delle tre testate */
 body.gm-sp {--g-bg: #F6F3EE; --g-card: #FFFFFF; --g-ink: #141414; --g-soft: #6B655E; --g-rule: #DDD6CC; --g-acc: #C8102E; --g-acc-soft: #F6DADF; --g-title: 'Playfair Display', serif; --g-text: 'Libre Franklin', sans-serif; --g-meta: 'IBM Plex Mono', monospace; --g-read: 'Libre Franklin', sans-serif}
 body.gm-sw {--g-bg: #EEF1F5; --g-card: #FFFFFF; --g-ink: #18202E; --g-soft: #687286; --g-rule: #DFE3EA; --g-acc: #B8954A; --g-acc-soft: #ECDFC3; --g-navy: #0F1F3A; --g-navy-2: #1D3563; --g-title: 'Libre Caslon Text', serif; --g-text: 'Source Sans 3', sans-serif; --g-meta: 'Source Sans 3', sans-serif; --g-read: 'Libre Caslon Text', serif}
